@@ -5,31 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FCC: Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
     <header id="header">
-        <img src="" alt="Logo" id="header-img">
+        <img src="./img/playstation-brands.svg" alt="Logo" id="header-img" width="80">
         <nav id="nav-bar">
             <ul>
                 <li><a href="#demo" class="nav-link">Demo</a></li>
                 <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#subscript" class="nav-link">Subscript</a></li>
+                <li><a href="#sign-up" class="nav-link">Sign Up</a></li>
             </ul>
         </nav>
     </header>
-    <section id="hero">
 
-    </section>
     <section id="demo">
+        <h1>PlayStation 5 is coming</h1>
+        <h3>Launches holiday 2020</h3>
+        <Button>SIGN UP</Button>
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jQVuLH5yAIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+
     <section id="features">
-        
-    </section>
-    <section id="subscript">
+        <img src="./img/playstation-B.jpg" alt="PS5-3D-render-back" width="500">
+        <img src="./img/playstation-V.jpg" alt="PS5-3D-render-vertical" width="500">
+        <img src="./img/playstation-F.jpg" alt="PS5-3D-render-front" width="500">
+        <h2>HARDWARE FEATURES</h2>
 
     </section>
+
+    <section id="sign-up">
+        <h2>LOREM IPSUM</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit et velit at voluptatum error ut, recusandae, minima maiores deleniti dolorem numquam nemo neque necessitatibus incidunt eligendi architecto soluta officiis nisi. Dolorem sit natus repellat officia deleniti quas minus illum soluta incidunt, magni ex molestias? Quas ut optio voluptatem iusto culpa illo, reiciendis quasi ratione aspernatur quibusdam modi placeat numquam adipisci necessitatibus, velit atque inventore! Asperiores vero pariatur laboriosam placeat natus voluptate necessitatibus nostrum iste quod eius neque aliquam unde alias explicabo corporis saepe impedit ipsa illum, suscipit ullam atque, molestias officiis, labore libero. Expedita iste in ducimus fugit illum dolores ut esse numquam, voluptas ad placeat saepe hic obcaecati porro odio ea necessitatibus nobis possimus voluptate ullam exercitationem. Ducimus, quis!</p>
+
+        <form action="#!" method="post">
+            <p>Sign up to be among the first to receive updates as we announce them, including news on the PS5 release date, PS5 price and upcoming roster of PS5 launch games.</p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="dob">Date of Birth:</label>
+            <select name="day" id="dob" class="dob">
+                <option selected disabled>Day</option>
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="03">3</option>
+                <option value="04">4</option>
+                <option value="05">5</option>
+                <option value="06">6</option>
+            </select>
+            <select name="month" class="dob">
+                <option selected disabled>Month</option>
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="03">3</option>
+                <option value="04">4</option>
+                <option value="05">5</option>
+                <option value="06">6</option>
+                <option value="07">7</option>
+                <option value="08">8</option>
+                <option value="09">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="year" class="dob">
+                <option selected disabled>Year</option>
+                <option value="2020">2020</option>
+            </select>
+        </form>
+    </section>
+
     <footer>
         <h6>Created & Design by Jacob Lin 💙2020</h6>
     </footer>

@@ -5,3 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --Primary-Color: rgb(0, 55, 145);
+}
+
+body {
+    background-color: var(--Primary-Color);
+}
