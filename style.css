@@ -7,9 +7,68 @@
 }
 
 :root {
-    --Primary-Color: rgb(0, 55, 145);
+    --primary-color: rgb(0, 55, 145);
+    --grey-bg-color: #E0E0E0;
 }
 
 body {
-    background-color: var(--Primary-Color);
+    background-color: var(--primary-color);
+}
+
+/* Header Section */
+header {
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100vw;
+}
+
+header nav {
+    margin: 0 auto;
+    width: 75vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 70%;
+}
+
+header ul {
+    text-align: right;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    padding-left: 2.6em;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    padding: 0.4em 0.8em;
+}
+
+/* Demo Section */
+#demo {
+    padding-top: 10vh;
+    background-image: url(./img/ps5bg.jpeg);
+}
+
+#demo div {
+    margin: 0 auto;
+    width: 75vw;
+    color: white;
+    display: flex;
 }
