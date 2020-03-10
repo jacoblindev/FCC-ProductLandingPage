@@ -15,6 +15,11 @@ body {
     background-color: var(--primary-color);
 }
 
+.container {
+    margin: 0 auto;
+    width: 75vw;
+}
+
 /* Header Section */
 header {
     background-color: var(--primary-color);
@@ -23,8 +28,6 @@ header {
 }
 
 header nav {
-    margin: 0 auto;
-    width: 75vw;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -67,8 +70,50 @@ header ul li a:hover {
 }
 
 #demo div {
-    margin: 0 auto;
-    width: 75vw;
     color: white;
+    height: 60vh;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#demo .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#demo h1, #demo h3 {
+    font-family: Helvetica, sans-serif;
+    padding: 0.6rem 0;
+}
+
+#demo h1 {
+    font-size: 3.2rem;
+}
+
+#demo h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+#demo a {
+    display: block;
+    padding: 1rem 2.8rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+/* Photo Section */
+#photos {
+    display: flex;
+}
+
+#photos img {
+    width: calc(100% / 3);
 }
