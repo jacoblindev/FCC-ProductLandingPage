@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--primary-color);
+    font-family: Helvetica, sans-serif;
 }
 
 .container {
@@ -25,6 +26,7 @@ header {
     background-color: var(--primary-color);
     position: fixed;
     width: 100vw;
+    z-index: 10;
 }
 
 header nav {
@@ -47,7 +49,6 @@ header ul li {
     list-style: none;
     padding-left: 2.6em;
     font-size: 1.3rem;
-    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
@@ -58,7 +59,7 @@ header ul li a {
 
 header ul li a:hover {
     background-color: white;
-    color: black;
+    color: var(--primary-color);
     border-radius: 4px;
     padding: 0.4em 0.8em;
 }
@@ -85,7 +86,6 @@ header ul li a:hover {
 }
 
 #demo h1, #demo h3 {
-    font-family: Helvetica, sans-serif;
     padding: 0.6rem 0;
 }
 
@@ -104,7 +104,6 @@ header ul li a:hover {
     margin: 1rem 0;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Helvetica, sans-serif;
     color: white;
     background-color: var(--primary-color);
 }
@@ -116,4 +115,149 @@ header ul li a:hover {
 
 #photos img {
     width: calc(100% / 3);
+}
+
+/* Features Section */
+#features {
+    height: 45vh;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 2rem;
+}
+
+#features #cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 3em 1em;
+}
+
+#features #cards li {
+    width: 10rem;
+    height: 10rem;
+    list-style: none;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+#features #cards li img {
+    width: 70%;
+}
+
+/* Sign up Section */
+#sign-up {
+    height: 55vh;
+    width: 75vw;
+    margin: 0 auto;
+    color: white;
+}
+
+#sign-up .left {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.left ul {
+    margin-top: 1.5em;
+}
+
+.left ul li {
+    list-style: none;
+    padding: 0.8em;
+}
+
+.left ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.left ul li a:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 4px;
+    padding: 0.1em 0.6em;
+}
+
+#sign-up .right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.right #greycover {
+    background-color: var(--grey-bg-color);
+    width: calc(75vw / 2);
+    height: 45vh;
+    position: absolute;
+    top: -81.8%
+}
+
+#form {
+    background-color: var(--grey-bg-color);
+    height: 100%;
+    color: var(--primary-color);
+    padding: 0 2em 3em 2em;
+}
+
+#form p {
+    font-size: 0.8rem;
+}
+
+#form input[type="email"] {
+    width: 100%;
+    height: 12%;
+    border: none;
+    border-radius: 4px;
+    padding: 0 1em;
+    margin: 2em 0;
+}
+
+#form #select {
+    display: flex;
+    justify-content: space-between;
+    height: 11%;
+    margin: 1em 0;
+}
+
+#select select {
+    width: calc(95% / 3);
+    height: 100%;
+    border: none;
+    background-color: white;
+    padding: 0 2em;
+}
+
+#form input[type="submit"] {
+    width: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 1em 0;
+    cursor: pointer;
+    padding: 0.8em;
+}
+
+#form input[type="submit"]:hover {
+    background-color: #000;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+footer h6 {
+    font-size: 1em;
+    padding: 1.2em;
 }

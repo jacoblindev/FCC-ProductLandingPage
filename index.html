@@ -15,7 +15,7 @@
             <img src="./img/ps-logo-white@2x.png" alt="Logo" id="header-img">
             <ul>
                 <li><a href="#demo" class="nav-link">Demo</a></li>
-                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#photos" class="nav-link">Features</a></li>
                 <li><a href="#sign-up" class="nav-link">Sign Up</a></li>
             </ul>
         </nav>
@@ -34,37 +34,58 @@
     </section>
 
     <section id="photos">
-        <img src="./img/playstation-B.jpg" alt="PS5-3D-render-back" width="500">
-        <img src="./img/playstation-V.jpg" alt="PS5-3D-render-vertical" width="500">
-        <img src="./img/playstation-F.jpg" alt="PS5-3D-render-front" width="500">
+        <img src="./img/playstation-B.jpg" alt="PS5-3D-render-back">
+        <img src="./img/playstation-V.jpg" alt="PS5-3D-render-vertical">
+        <img src="./img/playstation-F.jpg" alt="PS5-3D-render-front">
     </section>
-    
+
     <section id="features">
-
-        <h2>HARDWARE FEATURES</h2>
-
+        <h2 class="container">HARDWARE FEATURES</h2>
+        <div id="greycover"></div>
+        <ul id="cards">
+            <li><img src="./img/Triangle@2x.png" alt="Triangle"></li>
+            <li><img src="./img/Square@2x.png" alt="Square"></li>
+            <li><img src="./img/ps-logo-white@2x.png" alt="PS-Logo"></li>
+            <li><img src="./img/Cross@2x.png" alt="Cross"></li>
+            <li><img src="./img/Circle@2x.png" alt="Circle"></li>
+        </ul>
     </section>
 
     <section id="sign-up">
-        <h2>LOREM IPSUM</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit et velit at voluptatum error ut, recusandae, minima maiores deleniti dolorem numquam nemo neque necessitatibus incidunt eligendi architecto soluta officiis nisi. Dolorem sit natus repellat officia deleniti quas minus illum soluta incidunt, magni ex molestias? Quas ut optio voluptatem iusto culpa illo, reiciendis quasi ratione aspernatur quibusdam modi placeat numquam adipisci necessitatibus, velit atque inventore! Asperiores vero pariatur laboriosam placeat natus voluptate necessitatibus nostrum iste quod eius neque aliquam unde alias explicabo corporis saepe impedit ipsa illum, suscipit ullam atque, molestias officiis, labore libero. Expedita iste in ducimus fugit illum dolores ut esse numquam, voluptas ad placeat saepe hic obcaecati porro odio ea necessitatibus nobis possimus voluptate ullam exercitationem. Ducimus, quis!</p>
-
-        <form action="#" method="GET">
-            <p>Sign up to be among the first to receive updates as we announce them, including news on the PS5 release date, PS5 price and upcoming roster of PS5 launch games.</p>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" required>
-            <label for="dob">Date of Birth:</label>
-            <select name="day" id="dob" class="dob">
-                <option selected disabled>Day</option>
-            </select>
-            <select name="month" class="dob">
-                <option selected disabled>Month</option>
-            </select>
-            <select name="year" class="dob">
-                <option selected disabled>Year</option>
-            </select>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="container left">
+            <h2>CONTENTS RESOURCES</h2>
+            <ul>
+                <li>YouTube Video from <a target="_blank" href="https://www.youtube.com/watch?v=jQVuLH5yAIU"> TheGamingRevolution</a></li>
+                <li>3D Renders by <a target="_blank" href="https://nl.letsgodigital.org/spelcomputers-games/ps5-sony-playstation-5/">LetsGo Digital</a></li>
+                <li>PS Logo & Button Icon made<br> by <a target="_blank" href="https://www.flaticon.com/authors/freepik">Pixel perfect</a> from <a target="_blank" href="https://www.flaticon.com/">www.flaticon.com</a></li>
+                <li>PS Button Logo background from <a target="_blank" href="https://www.playstation.com/en-us/explore/ps5/">www.playstation.com</a></li>
+            </ul>
+        </div>
+        <div class="container right">
+            <div id="greycover"></div>
+            <form id="form" action="#" method="GET">
+                <p>Sign up to be among the first to receive updates as we announce them, including news on the PS5 release date, PS5 price and upcoming roster of PS5 launch games.</p>
+                <br>
+                <label for="email">E-mail:</label>
+                <br>
+                <input type="email" name="email" id="email" required placeholder="Enter your email...">
+                <br>
+                <label for="dob">Date of Birth:</label>
+                <div id="select">
+                    <select name="day" id="dob">
+                        <option selected disabled>Day</option>
+                    </select>
+                    <select name="month">
+                        <option selected disabled>Month</option>
+                    </select>
+                    <select name="year">
+                        <option selected disabled>Year</option>
+                    </select>
+                </div>
+                <p>By clicking below you agree to receive personalized information and offers by email relating to PlayStation 5.</p>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
     </section>
 
     <footer>
