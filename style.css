@@ -108,6 +108,11 @@ header ul li a:hover {
     background-color: var(--primary-color);
 }
 
+#demo iframe {
+    width: 40vw;
+    height: calc(40vw * 9 / 16);
+}
+
 /* Photo Section */
 #photos {
     display: flex;
@@ -260,4 +265,129 @@ footer {
 footer h6 {
     font-size: 1em;
     padding: 1.2em;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90vw;
+    }
+
+    /* Header Section */
+    header nav {
+        height: 8vh;
+        justify-content: center;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header img {
+        height: 60%;
+    }
+
+    /* Demo Section */
+    #demo {
+        padding-top: 8vh;
+    }
+
+    #demo div {
+        height: 65vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #demo .wrap {
+        margin-top: 1em;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #demo h1 {
+        font-size: 2.6rem;
+    }
+    
+    #demo h3 {
+        font-size: 1.5rem;
+    }
+
+    #demo iframe {
+        width: 100vw;
+        height: calc(100vw * 3 / 4);
+    }
+
+    /* Photo Section */
+    #photos {
+        flex-direction: column-reverse;
+    }
+
+    #photos img {
+        width: 100%;
+    }
+
+    /* Features Section */
+    #features {
+        height: auto;
+        padding: 2rem 0.5em;
+        text-align: center;
+    }
+
+    #features #cards {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em;
+    }
+
+    #features #cards li {
+        width: 65vw;
+        height: 65vw;
+        z-index: 9;
+        margin: 1em 0;
+    }
+    
+    /* Sign up Section */
+    #sign-up {
+        height: auto;
+        width: 100vw;
+        text-align: center;
+    }
+
+    #sign-up .left {
+        width: 100%;
+        float: none;
+    }
+
+    #sign-up .right {
+        width: 100%;
+        float: none;
+    }
+
+    .right #greycover {
+        display: none;
+    }
+
+    #form {
+        padding: 3em 2em;
+        text-align: left;
+    }
+
+    #form p {
+        font-size: 0.8rem;
+    }
+
+    #form input[type="email"] {
+        height: 50px;
+        margin: 1em 0;
+    }
+
+    #form #select {
+        height: 48px;
+    }
+
+    #form input[type="submit"] {
+        margin-bottom: 0;
+        padding: 1em;
+    }
 }
